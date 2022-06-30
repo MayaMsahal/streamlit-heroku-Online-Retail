@@ -9,7 +9,7 @@ st.write("""
 ## Project:Customer segmentation using RFM analysis and clustering
 This app predicts the **Income of online-retail using K-mean Cluster and RFM ** type
 """)
-st.sidebar.image("pic.jpeg",width=300)
+st.sidebar.image("https://github.com/MayaMsahal/streamlit-heroku-Online-Retail/raw/main/pic.jpeg",width=300)
 
 st.sidebar.header('User Input Parameters')
 
