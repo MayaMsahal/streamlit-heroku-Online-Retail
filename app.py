@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import urllib.request
 
 st.image("http://www.ehtp.ac.ma/images/lo.png")
 st.write("""
@@ -35,7 +34,7 @@ st.write(df)
 
 #K-Means model:
 
-model_km=pickle.load(urllib.request.urlopen("https://github.com/MayaMsahal/streamlit-heroku-Online-Retail/raw/main/model_df_normalized.pkl", "rb"))
+model_km=pickle.load(open("/app/model_df_normalized.pkl", "rb"))
 prediction = model_km.predict(df)
 
 
